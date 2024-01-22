@@ -22,6 +22,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
     if (text) {
       const segments: string[] = []
+      segments.push("Last updated: ")
 
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!))
@@ -33,7 +34,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(timeTaken)
       }
 
-      return <p class={`content-meta ${displayClass ?? ""}`}>{segments.join(", ")}</p>
+      return <p class={`content-meta ${displayClass ?? ""}`}>{segments.join("")}</p>
     } else {
       return null
     }
@@ -43,6 +44,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   .content-meta {
     margin-top: 0;
     color: var(--gray);
+    font-size: 0.9em;
+    font-style: bold;
   }
   `
   return ContentMetadata

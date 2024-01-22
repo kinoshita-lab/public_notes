@@ -1,3 +1,84 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+h1 {
+    font-size: 2.5rem !important;
+    letter-spacing: .1rem !important;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+h1 .page-title {
+    font-size: 3rem !important;
+    letter-spacing: .2rem !important;
+}
+
+.explorer h1 {
+    font-size: 1rem !important;
+}
+
+.explorer li {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+h2 {
+    font-size: 2rem !important;
+    letter-spacing: .1rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+    letter-spacing: .1rem !important;
+}
+
+.backlinks h3 {
+    font-size: 1rem !important;
+
+}
+
+.backlinks li {
+    font-size: 0.75rem !important;
+}
+
+h4 {
+    font-size: 1.5rem !important;
+    letter-spacing: .1rem !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+    letter-spacing: .1rem !important;
+}
+
+h6 {
+    font-size: 1.5rem !important;
+    letter-spacing: .1rem !important;
+}
+
+.article-title {
+    font-size: 2.5rem !important;
+}
+
+.center {
+    width: 100%;
+}
+
+
+p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: .05rem !important;
+    margin-left: 1rem !important;
+}
+
+pre {
+    margin-left: 1rem;
+}
+
+.content-meta {
+    margin-left: 0rem !important;
+    margin-block-end: 0rem !important;
+    font-family: sans-serif;
+}

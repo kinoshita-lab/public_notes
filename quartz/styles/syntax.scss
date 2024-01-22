@@ -1,6 +1,8 @@
 code[data-theme*=" "] {
   color: var(--shiki-light);
   background-color: var(--shiki-light-bg);
+  line-height: 1rem;
+    font-size: 1rem;
 }
 
 code[data-theme*=" "] span {
