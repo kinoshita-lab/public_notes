@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "kinoshita-lab.github.io/public_notes",
-    ignorePatterns: ["private", "templates", ".obsidian", "obosidian_templates_"],
+    ignorePatterns: ["private", "templates", ".obsidian", "obsidian_templates_"],
     defaultDateType: "modified",
     theme: {
       typography: {
