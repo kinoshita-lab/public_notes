@@ -39,8 +39,36 @@ h3 {
 
 .backlinks li {
     font-size: 0.75rem !important;
+    margin-left: 1rem !important;
+    }
+    
+    .recent-notes>ul.recent-ul>li .section>.desc>h3>a {
+        font-size: 0.75rem !important;
 }
 
+.recent-li p {
+    font-size: 0.75rem !important;
+}
+
+.recent-notes>ul.recent-ul>li {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+.recent-notes>ul.recent-ul {
+    margin: 0 !important;
+    margin-left: 1em !important;
+}
+
+.recent-li h3 {
+    font-size: 0.75rem !important;
+    letter-spacing: 0 !important;
+}
+
+.recent-notes h3 {
+    font-size: 1rem !important;
+}
 h4 {
     font-size: 1.5rem !important;
     letter-spacing: .1rem !important;
