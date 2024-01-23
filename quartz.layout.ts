@@ -18,7 +18,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.RecentNotes({title: "Recent"}),
+    Component.RecentNotes({title: "Recent", limit: 10}),
   ],
   right: [        
     Component.Backlinks(),
