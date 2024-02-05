@@ -1,3 +1,9 @@
 @use "./base.scss";
 
+$default-font-size: 0.8rem;
+$default-line-height: 1.3rem;
+$header-font-size-base : $default-font-size * 1.2;
+$header-font-size-h6 : $default-font-size * 1.2;
+$header-line-height : 120%;
+$header_font: sans-serif;
 // put your custom CSS here!
