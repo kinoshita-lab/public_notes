@@ -1,5 +1,5 @@
-### 20240204221756 Raspberry Pi Imagerを使ってSDカードを作成
-#raspberrypi 
+### 20240204221756 raspberry Pi Imagerを使ってSDカードを作成
+#raspi 
 [Install Raspberry Pi OS using Raspberry Pi Imager](https://www.raspberrypi.com/software/) のDownload for * で自分の環境用のRaspberry Pi Imagerをダウンロード、インストール
 
 起動したら、 
