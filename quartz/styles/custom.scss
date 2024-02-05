@@ -87,11 +87,12 @@ code {
 }
 
 a.internal {
-    margin-right: 0.8rem !important;
-        background-color: transparent !important;
-    
-    }
-    
+    background-color: transparent !important;
+}
+
+a.tag-link {
+    margin-right: 1rem !important;
+}
     .page>#quartz-body .sidebar {
         padding-right: 2rem !important;
 }
