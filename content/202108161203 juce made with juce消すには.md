@@ -1,5 +1,6 @@
 # 202108161203 juce made with juce消すには
 #juce #programming
+
 - jucerでログインして
 - JUCE_DISPLAY_SPLASH_SCREEN=0
 
