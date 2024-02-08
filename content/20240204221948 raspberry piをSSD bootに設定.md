@@ -67,6 +67,21 @@ capabilities 0x0000007f
 
 ここまでできたら、USBブートにする。最初の手順で作ったSSDをraspi4に接続。microSDは外して起動。
 
+どのくらい速度違うか、簡単に調べてみた。
+```
+$ sudo hdparm -tT /dev/mmcblk0 # マイクロSD
+
+/dev/mmcblk0:
+ Timing cached reads:   2048 MB in  2.00 seconds = 1024.23 MB/sec
+ Timing buffered disk reads: 132 MB in  3.02 seconds =  43.70 MB/sec
+
+$ sudo hdparm -tT /dev/sda # SSD
+/dev/sda:
+ Timing cached reads:   2034 MB in  2.00 seconds = 1017.23 MB/sec
+ Timing buffered disk reads: 1020 MB in  3.06 seconds = 333.44 MB/sec
+```
+約 7.6倍くらい高速になっている。素晴しい
+
 cf.
 - [ラズパイ4をUSB接続のSSDから起動する方法(USBブート) | ラズパイダ](https://raspida.com/rpi4-ssd-usb-boot)
 - [Raspberry PiのバックアップをCLIから作成する | Vogelbarsch](https://vogelbarsch.com/2020-08-27-140104/)
