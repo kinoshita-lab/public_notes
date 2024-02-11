@@ -8,27 +8,8 @@
 [[20240211141946 Raspi4 Cloudflareでトンネルを作る|Raspi4 Cloudflareでトンネルを作る]] の作業が完了している
 
 ## 手順
-#### Access Groupsの作成
-cloudflareにログイン、 Zero Trustをクリック。
-AccessからAccess Groupsを選択。 "+ Add a Group"をクリック。
-遷移した画面で、"Assign as default group" に チェック。 Include の所のSelectorは適切に設定する。
-Everyone/Everyone という設定も可能だが、セキュリティ上あまりよろしくない。
-ドメインでメールの設定をしている場合、それが使えるので、 Selectorに"Emails ending in" を選んで、Valueにメールアドレスのドメインを記入した。複数指定できる。
-こんなかんじ。
-
-![[Pasted image 20240211191414.png]]
+- [[20240211195201 Cloudflare Access Groupsの作成|Cloudflare Access Groupsの作成]]
+- [[20240211195126 Cloudflare Applicationsの作成|Cloudflare Applicationsの作成]]
+を終わらせる。
 
 
-
-#### Applicationsの作成
-※ これが何かよくわかっていない。
-todo: RTFM [Applications · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/applications/)
-
-Zero Trustのダッシュボードで、 Access -> Applicationsを選択。 "+ Add an application"をクリック。
-次の画面では "Self Hosted"を選ぶ
-
-Application name: ssh にした
-Application domain: subdomain: [[20240211193602 Cloudflare Public Hostnameの設定|Cloudflare Public Hostnameの設定]] で設定した
-
-
- 
