@@ -10,3 +10,7 @@ Application domain: subdomain: [[20240211193602 Cloudflare Public Hostnameの設
 こんな感じ。pi4はsshアクセス、notesはhttps。
  
 ![[Pasted image 20240211195107.png]]
+
+Policiesタブをクリックして、policyを作成する。
+default_policyというのを作り、 設定はデフォルトとした。
+Assing a group で、 [[20240211195201 Cloudflare Access Groupsの作成|Cloudflare Access Groupsの作成]] で作ったdefault_groupにチェック。 "Save policy"でPolicyを作成。
