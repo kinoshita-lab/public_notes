@@ -24,7 +24,10 @@ Everyone/Everyone という設定も可能だが、セキュリティ上あま�
 これが何かよくわかっていない。
 todo: RTFM [Applications · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/applications/)
 Zero Trustのダッシュボードで、 Access -> Applicationsを選択。 "+ Add an application"をクリック。
+次の画面では "Self Hosted"を選ぶ
 
+Application name: ssh にした
+Application domain: subdomain: 
 
 
  
