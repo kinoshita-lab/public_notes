@@ -8,7 +8,7 @@
 という手順が確実そう。
 
 #### SSDのフォーマット
-SSDをUSBで接続。認識されると、こんな感じにdmesgが出てくる
+SSDをraspiにUSBで接続。認識されると、こんな感じにdmesgが出てくる
 
 ```
 $ dmesg
@@ -41,6 +41,8 @@ $ dmesg
 ```
 
 fdiskで全部のパーティーションを削除。状況によって異なるので割愛。
+削除したら、 Raspberry Pi Imager が動くOSに接続、 必要なOSを書きこむ。
+
 #### bootloaderのバージョン確認
 ```
 $ vcgencmd bootloader_version
