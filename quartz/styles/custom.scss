@@ -1,3 +1,113 @@
 @use "./base.scss";
 
+$default-font-size: 0.8rem;
+$default-line-height: 1.3rem;
+$header-font-size-base : $default-font-size * 1.2;
+$header-font-size-h6 : $default-font-size * 1.2;
+$header-line-height : 120%;
+$header_font: sans-serif;
 // put your custom CSS here!
+
+h1 {
+    font-size: 1.75rem !important;
+    font-family: $header_font !important;
+    font-weight: bold !important;
+    letter-spacing: .1rem !important;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    line-height: $header-line-height !important;
+}
+
+li {
+    line-height: $default-line-height;
+    font-size: $default-font-size;
+}
+
+div.left.sidebar {
+    padding-left: 1rem !important;
+}
+
+
+
+
+
+
+h2 {
+    font-size: 1rem !important;
+    font-family: $header_font !important;
+    font-weight: bold !important;
+    letter-spacing: .1rem !important;
+    line-height: $header-line-height !important;
+}
+
+h3 {
+    font-size: 1rem !important;
+    font-family: $header_font !important;
+    font-weight: bold !important;
+    letter-spacing: .1rem !important;
+    line-height: $header-line-height !important;
+}
+
+
+h4 {
+    font-size: 1rem !important;
+    font-family: $header_font !important;
+    letter-spacing: .1rem !important;
+    line-height: $header-line-height !important;
+}
+
+h5 {
+    font-size: 1rem !important;
+    font-family: $header_font !important;
+    letter-spacing: .1rem !important;
+    line-height: $header-line-height !important;
+}
+
+h6 {
+    font-size: 1rem !important;
+    font-family: $header_font !important;
+    letter-spacing: .1rem !important;
+    line-height: $header-line-height !important;
+}
+
+
+p {
+    font-size: 0.8rem;
+    line-height: $default-line-height;
+    letter-spacing: .05rem !important;
+    margin-left: 1rem !important;
+}
+
+p.content-meta {
+    font-family: sans-serif !important;
+    margin-left: 0 !important;
+}
+
+pre {
+    margin-left: 1rem;
+    font-family: monospace;
+}
+
+code {
+    font-size: 0.8rem !important;
+    font-family: monospace;
+}
+
+a.internal {
+    background-color: transparent !important;
+}
+
+a.tag-link {
+    margin-right: 1rem !important;
+}
+
+
+.right.sidebar {
+    padding-right: 1rem !important;
+}
+
+.recent-notes>ul.recent-ul>li {
+    font-size: 0.75rem !important;
+    margin: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
