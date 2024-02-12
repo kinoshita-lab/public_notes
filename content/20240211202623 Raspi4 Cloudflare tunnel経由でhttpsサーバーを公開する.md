@@ -2,11 +2,9 @@
 #raspi #cloudflare #server
 
 ## 前提となる作業
-- [[20240211193602 Cloudflare Public Hostnameの設定|Cloudflare Public Hostnameの設定]]
-- [[20240211195126 Cloudflare Applicationsの作成|Cloudflare Applicationsの作成]]
 - [[20240211141946 Raspi4 Cloudflareでトンネルを作る|Raspi4 Cloudflareでトンネルを作る]]
+- [[20240212183719 Raspi4でnginxを設定する|Raspi4でnginxを設定する]]
 
-あたりかな。
 
 
 ## WEBサーバーの設定
