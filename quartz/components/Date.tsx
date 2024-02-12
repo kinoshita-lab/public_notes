@@ -19,7 +19,7 @@ export function getDate(cfg: GlobalConfiguration, data: QuartzPluginData): Date 
 }
 
 export function formatDate(d: Date, locale: ValidLocale = "sv-SE"): string {
-  return d.toLocaleDateString(locale)
+  return d.toLocaleDateString('sv-SE')
 }
 
 export function Date({ date, locale }: Props) {
