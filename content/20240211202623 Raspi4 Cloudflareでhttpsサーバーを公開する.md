@@ -18,6 +18,9 @@
 - certificateを `/etc/ssl/certs/certificate.pem` 
 - private key を `/etc/ssl/private/key.pem` に保存
 
+
+## WEBサーバーの設定
+- [[20240212183719 raspi4でnginxを設定する|raspi4でnginxを設定する]]
 ## cf.
 - [Set up Cloudflare · Cloudflare Fundamentals docs](https://developers.cloudflare.com/fundamentals/setup/)
 - [How to use Caddy with Cloudflare's SSL settings](https://samjmck.com/en/blog/using-caddy-with-cloudflare/)
