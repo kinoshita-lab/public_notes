@@ -10,6 +10,7 @@
 
 
 ## 手順
+### サーバー(raspi)側
 CNAME recordの追加
 ```
 $ cloudflared tunnel route dns **** pi4.kinoshita-lab.org(ここは好きなやつにする)
@@ -19,14 +20,25 @@ $ cloudflared tunnel route dns **** pi4.kinoshita-lab.org(ここは好きなや�
 
 \**** は [[20240212183159 cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]] を入れる。
 
-systemで動いているcloudflaredにsshの設定を追加。
+systemで動いているcloudflaredにsshの設定を変更。 httpとsshをhostnameで分けるようにする。
 
+```
+tunnel: ****
+credentials-file: /var/lib/cloudflare/.cloudflared/****.json
 
+ingress:
+    - hostname: notes.kinoshita-lab.org
+      service: http:localhost
+    - hostname: pi4.kinoshita-lab.org
+      service: ssh://localhost:??(sshのポート名)
+    - service: http_status:404
+```
 
+### クライアント(wsl2のubuntuなど)側
 .ssh/config に、 cloudflaredを使う設定にしたssh設定を追記。
 
 ```
-Host pi4.kinoshita-lab.org (cloudflareで作ったsshのtunnel)
+Host pi4.kinoshita-lab.org (cloudflareで作ったsshのtunnelのドメイン)
         Port xxxxx (自分が設定したポート番号)
         ProxyCommand cloudflared access ssh --hostname %h
 ```
