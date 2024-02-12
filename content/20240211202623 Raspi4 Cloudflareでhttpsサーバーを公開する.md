@@ -3,5 +3,4 @@
 
 
 ## cf.
-[Cloudflare Tunnelで自宅サーバーを公開する(FreeプランOK)](https://zenn.dev/yakumo/articles/b1f0e1115cb5b6)
-.
+- [Set up Cloudflare · Cloudflare Fundamentals docs](https://developers.cloudflare.com/fundamentals/setup/)
