@@ -32,9 +32,18 @@ cloudflare@saipi4:~ $ cloudflared tunnel route dns ***** notes.kinoshita-lab.org
 2024-02-12T10:20:56Z INF Added CNAME notes.kinoshita-lab.org which will route to this tunnel tunnelID=****
 ```
 ```
-cloudflare@saipi4:~ $ cloudflared tunnel --config ~/.cloudflared/config/yaml run
+cloudflare@saipi4:~ $ cloudflared tunnel --config ~/.cloudflared/config.yaml run
+```
+
+これでうまくいったら、 https://notes.kinoshita-lab.org にアクセスすると見える。
+
+### service化
+うまくいっていたらserviceとして登録。
+```
+cloudflare@saipi4:~ $ vim 
 
 ```
+
 ## cf.
 
 
