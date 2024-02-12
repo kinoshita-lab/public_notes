@@ -44,7 +44,6 @@ cloudflare@saipi4:~ $ vim sudo vim /etc/systemd/system/cloudflared.service\
 ```
 中身は
 ```
-
 [Unit]
 Description=cloudflared
 After=network.target
