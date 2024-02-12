@@ -6,13 +6,8 @@
 - [[20240211195126 Cloudflare Applicationsの作成|Cloudflare Applicationsの作成]]
 あたりかな。
 
-## SSL/TLS setup
-[Get started with SSL/TLS · Cloudflare SSL/TLS docs](https://developers.cloudflare.com/ssl/get-started/) を見ながら作業。
-  [Add a site · Cloudflare Fundamentals docs](https://developers.cloudflare.com/fundamentals/setup/manage-domains/add-site/)
-デフォルトの encryption modeはFlexible
-[Origin CA certificates · Cloudflare SSL/TLS docs](https://developers.cloudflare.com/ssl/origin-configuration/origin-ca#1-create-an-origin-ca-certificate)
-
-作ったキーをサーバーに保存
+[[20240212184429 cloudflare SSL_TLS setup|cloudflare SSL/TLS setup]]
+作ったキーを保存
 [[20240212132340 CloudFlareのkey pairs|20240212132340 CloudFlareのkey pairs(private)]]
 
 - certificateを `/etc/ssl/certs/certificate.pem` 
