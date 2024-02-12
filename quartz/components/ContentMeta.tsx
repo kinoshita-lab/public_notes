@@ -24,6 +24,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
     if (text) {
       const segments: string[] = []
+      segments.push("Last updated: ")
 
       if (fileData.dates) {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
