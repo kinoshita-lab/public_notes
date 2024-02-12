@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "google",
       tagId: "G-JVXFC0DCRE",
     },
-    locale: "ja-JP",
+    locale: "en-US",
     baseUrl: "kinoshita-lab.github.io/public_notes",
     ignorePatterns: ["private", "templates", ".obsidian", "obsidian_templates_"],
     defaultDateType: "modified",
