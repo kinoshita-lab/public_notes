@@ -1,14 +1,14 @@
 # 20240204221948 raspberry piをSSD bootに設定
 #raspi #ssd
 色々と情報を見たが、一番簡単で確実な方法は、
-- microSDにRaspberry Pi Imagerで必要なOSを書きこむ
-- SSDをRaspberry Pi Imagerで必要なOSを書きこむ 20240204 時点ではraspi-cloneではうまくいかなかった。
-- microSDでブート、bootloaderを最新にする
-- raspi-configで起動をSSDに設定
+1. microSDにRaspberry Pi Imagerで必要なOSを書きこむ: [[20240204221756 raspberry Pi Imagerを使ってSDカードを作成|raspberry Pi Imagerを使ってSDカードを作成] (20240204 時点ではraspi-cloneではうまくいかなかった)
+2. microSDでブート、bootloaderを最新にする
+3. raspi-configで起動をSSDに設定、移行はmicroSD無しでも起動可能になる
+  
 という手順が確実そう。
 
 #### SSDのフォーマット
-SSDをUSBで接続。認識されると、こんな感じになる。
+SSDをUSBで接続。認識されると、こんな感じにdmesgが出てくる
 
 ```
 $ dmesg
