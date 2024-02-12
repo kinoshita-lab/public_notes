@@ -6,7 +6,7 @@ Cloudflareの同じ画面で、"Public Hostname" をクリック。
 "+ Add a public hostname"
 をクリック。
 subdomain: sshでアクセスしたい場合のサブドメインを設定(optional)
-Domain: 使いたいドメイン ([[#サイトを追加する]] で追加したものしか選べない)を選ぶ
+Domain: 使いたいドメイン (サイトを追加する で追加したものしか選べない)を選ぶ
 
 ### SSHの追加
 Service 
