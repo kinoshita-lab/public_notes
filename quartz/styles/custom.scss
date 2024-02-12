@@ -1,12 +1,16 @@
 @use "./base.scss";
 
-$default-font-size: 0.8rem;
+$root-font-size: 18px;
+$default-font-size: 1rem;
 $default-line-height: 1.3rem;
 $header-font-size-base : $default-font-size * 1.2;
 $header-font-size-h6 : $default-font-size * 1.2;
 $header-line-height : 120%;
 $header_font: sans-serif;
 // put your custom CSS here!
+html {
+    font-size: $root-font-size !important;
+}
 
 h1 {
     font-size: 1.75rem !important;
@@ -26,9 +30,6 @@ li {
 div.left.sidebar {
     padding-left: 1rem !important;
 }
-
-
-
 
 
 
@@ -72,9 +73,9 @@ h6 {
 
 
 p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: $default-line-height;
-    letter-spacing: .05rem !important;
+    letter-spacing: .025rem !important;
     margin-left: 1rem !important;
 }
 

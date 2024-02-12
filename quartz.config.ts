@@ -15,6 +15,7 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian", "obsidian_templates_"],
     defaultDateType: "modified",
     theme: {
+      cdnCaching: true,
       typography: {
         header: "Noto Serif JP",
         body: "Noto Serif JP",
