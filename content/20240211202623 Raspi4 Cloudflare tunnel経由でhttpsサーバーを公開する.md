@@ -11,7 +11,7 @@
 
 ## WEBサーバーの設定
 raspiのwebサーバーは80番(http)で動かして、cloudflareでhttps化してる。
-- [[20240212183719 raspi4でnginxを設定する|raspi4でnginxを設定する]] で、WEBサーバー(nginx)を動かしておく。
+- [[20240212183719 Raspi4でnginxを設定する|raspi4でnginxを設定する]] で、WEBサーバー(nginx)を動かしておく。
 - [[20240205150537 Caddyをraspi4にインストール|Caddyをraspi4にインストール]] で、Caddyを動かしてもよい。
 
 ## 作ったWEBサーバーをcloudflareのトンネルに登録
@@ -26,7 +26,7 @@ url: http://localhost
 tunnel: ******
 credentials-file: /var/lib/cloudflare/.cloudflared/******.json
 ```
-\**** の所はトンネルを作ったときの token(or UUID or TunnelID).  [[20240212183159 cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]]
+\**** の所はトンネルを作ったときの token(or UUID or TunnelID).  [[20240212183159 Cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]]
 
 ```
 cloudflare@saipi4:~ $ cloudflared tunnel route dns ***** notes.kinoshita-lab.org

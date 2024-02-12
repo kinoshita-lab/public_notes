@@ -18,7 +18,7 @@ $ cloudflared tunnel route dns **** pi4.kinoshita-lab.org(ここは好きなや�
 2024-02-12T11:33:59Z INF Added CNAME pi4.kinoshita-lab.org which will route to this tunnel tunnelID=****
 ```
 
-\**** は [[20240212183159 cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]] を入れる。
+\**** は [[20240212183159 Cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]] を入れる。
 
 systemで動いているcloudflaredにsshの設定を変更。 httpとsshをhostnameで分けるようにする。
 
