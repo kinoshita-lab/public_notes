@@ -10,6 +10,7 @@
 
 
 ## WEBサーバーの設定
+raspiのwebサーバーは80番(http)で動かして、cloudflareでhttps化してる。
 - [[20240212183719 raspi4でnginxを設定する|raspi4でnginxを設定する]] で、WEBサーバー(nginx)を動かしておく。
 - [[20240205150537 Caddyをraspi4にインストール|Caddyをraspi4にインストール]] で、Caddyを動かしてもよい。
 

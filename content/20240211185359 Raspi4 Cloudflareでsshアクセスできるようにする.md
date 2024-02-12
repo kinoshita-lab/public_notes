@@ -6,7 +6,7 @@
 
 ## 前提
 - [[20240211141946 Raspi4 Cloudflareでトンネルを作る|Raspi4 Cloudflareでトンネルを作る]] の作業が完了している
-- [[20240211202623 Raspi4 Cloudflare tunnel経由でhttpsサーバーを公開する|Raspi4 Cloudflare tunnel経由でhttpsサーバーを公開する]] の作業が完了している
+- [[20240211202623 Raspi4 Cloudflare tunnel経由でhttpsサーバーを公開する|Raspi4 Cloudflare tunnel経由でhttpsサーバーを公開する]] の作業が完了している(ユーザー、サービスなどは作成してある)
 
 
 ## 手順
