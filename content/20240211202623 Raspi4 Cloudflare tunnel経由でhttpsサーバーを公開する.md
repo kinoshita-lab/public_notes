@@ -4,7 +4,6 @@
 ## 前提となる作業
 - [[20240211193602 Cloudflare Public Hostnameの設定|Cloudflare Public Hostnameの設定]]
 - [[20240211195126 Cloudflare Applicationsの作成|Cloudflare Applicationsの作成]]
-- [[20240212184429 Cloudflare SSL_TLS setup|Cloudflare SSL/TLS setup]]
 - [[20240211141946 Raspi4 Cloudflareでトンネルを作る|Raspi4 Cloudflareでトンネルを作る]]
 
 あたりかな。
@@ -22,7 +21,7 @@ cloudflare@saipi4$ vim ~/.cloudflared/config/yaml
 で、中身はこんな感じ。
 
 ```
-url: https//localhost
+url: http://localhost
 tunnel: ******
 credentials-file: /var/lib/cloudflare/.cloudflared/******.json
 ```
