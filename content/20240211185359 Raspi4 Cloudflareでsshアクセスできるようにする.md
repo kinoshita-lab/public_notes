@@ -10,16 +10,18 @@
 
 
 ## 手順
-
-### クライアント側の設定
-直接sshではアクセスできず、 cloudflaredコマンドを使う。 以下はwsl2でubuntuを使っていた場合。
-
-cloudflaredをインストールする。 d(daemon)としては使わないけど。
-[Downloads · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/) から、 amd64/x86-64 の .deb をダウンロード、
+CNAME recordの追加
 ```
-$ sudo dpkg -i coudflared-linux-amd64.deb
+$ cloudflared tunnel route dns **** pi4.kinoshita-lab.org(ここは好きなやつにする)
+
+2024-02-12T11:33:59Z INF Added CNAME pi4.kinoshita-lab.org which will route to this tunnel tunnelID=****
 ```
-でインストール。
+
+\**** は [[20240212183159 cloudflare トンネルのtoken|cloudflare トンネルのtoken(private)]] を入れる。
+
+systemで動いているcloudflaredにsshの設定を追加。
+
+
 
 .ssh/config に、 cloudflaredを使う設定にしたssh設定を追記。
 
@@ -36,5 +38,5 @@ $ ssh pi4.kinoshita-lab.org
 でログインできればOK。
 
 ## cf.
-- [SSH · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/use-cases/ssh/)
-- [Cloudflare Zero TrustでSSH接続](https://zenn.dev/jij_inc/articles/659fe35813b940)
+- [Cloudflare Tunnel を使って自宅サーバを公開する - hoge な blog](https://akkyorz.hatenablog.com/entry/2022/12/15/012728)
+- [\[Cloudflare\] Cloudflare Tunnel の Ingress rules で複数サービスまとめて公開する - てくなべ (tekunabe)](https://tekunabe.hatenablog.jp/entry/2023/08/05/cloudflare_tunnel_ingress_rules)
