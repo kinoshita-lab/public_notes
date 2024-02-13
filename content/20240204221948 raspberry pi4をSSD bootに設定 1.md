@@ -82,7 +82,9 @@ $ sudo hdparm -tT /dev/sda # SSD
  Timing cached reads:   2034 MB in  2.00 seconds = 1017.23 MB/sec
  Timing buffered disk reads: 1020 MB in  3.06 seconds = 333.44 MB/sec
 ```
-約 7.6倍くらい高速になっている。素晴しい
+約 7.6倍くらい高速になっている。素晴しい。
+
+もっと詳しく調べたい場合は [[20240213160416 PiBenchmark|PiBenchmark]] を使う。
 
 cf.
 - [ラズパイ4をUSB接続のSSDから起動する方法(USBブート) | ラズパイダ](https://raspida.com/rpi4-ssd-usb-boot)
