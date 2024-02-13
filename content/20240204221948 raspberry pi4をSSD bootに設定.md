@@ -1,4 +1,4 @@
-# 20240204221948 raspberry piをSSD bootに設定
+# 20240204221948 raspberry pi4をSSD bootに設定
 #raspi #ssd
 色々と情報を見たが、一番簡単で確実な方法は、
 1. microSDにRaspberry Pi Imagerで必要なOSを書きこむ: [[20240204221756 raspberry Pi Imagerを使ってSDカードを作成|raspberry Pi Imagerを使ってSDカードを作成] (20240204 時点ではraspi-cloneではうまくいかなかった)
