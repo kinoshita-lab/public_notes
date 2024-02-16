@@ -14,7 +14,7 @@ raspiのwebサーバーは80番(http)で動かして、cloudflareでhttps化し�
 ## 作ったWEBサーバーをcloudflareのトンネルに登録
 
 ```
-cloudflare@saipi4$ vim ~/.cloudflared/config/yaml
+cloudflare@saipi4$ vim ~/.cloudflared/config.yaml
 ```
 で、中身はこんな感じ。
 
